@@ -12,6 +12,9 @@ namespace Banco.Aplicacao.CasoDeUso
         {            
             contaOrigem.DiminuirSaldo(valor);
             contaDestino.SomarSaldo(valor);
+            DateTime data = DateTime.Today;
+            contaOrigem.AddExtrato(new Extrato(data, -valor, EnumTransacao.Transferencia));
+            contaDestino.AddExtrato(new Extrato(data, valor, EnumTransacao.Transferencia));
             return contaOrigem;
         }
 

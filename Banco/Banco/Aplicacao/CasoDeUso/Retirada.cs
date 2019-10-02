@@ -10,6 +10,8 @@ namespace Banco.Aplicacao.CasoDeUso
         public Conta Executar(decimal valor, Conta conta)
         {
             conta.DiminuirSaldo(valor);
+            DateTime data = DateTime.Today;
+            conta.AddExtrato(new Extrato(data, -valor, EnumTransacao.Saque));
             return conta;
         }
     }
