@@ -11,6 +11,24 @@
           "lib/netstandard2.0/Autofac.dll": {}
         }
       },
+      "ICSharpCode.NRefactory/5.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.9.5.4"
+        },
+        "compile": {
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {}
+        },
+        "runtime": {
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {}
+        }
+      },
       "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
         "type": "package",
         "dependencies": {
@@ -383,6 +401,21 @@
             "assetType": "runtime",
             "rid": "win"
           }
+        }
+      },
+      "Mono.Cecil/0.9.5.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {},
+          "lib/net40/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {},
+          "lib/net40/Mono.Cecil.dll": {}
         }
       },
       "NETStandard.Library/1.6.0": {
@@ -1937,6 +1970,25 @@
         "lib/netstandard2.0/Autofac.xml"
       ]
     },
+    "ICSharpCode.NRefactory/5.5.1": {
+      "sha512": "iFnWweJykC6nHF535Qv1gYMseEWcM8/CvBMDxZWlg4ExafRg5uJm5R30GufpbzSYrxg3ry7RJ4Pnw6ghKmuqfg==",
+      "type": "package",
+      "path": "icsharpcode.nrefactory/5.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icsharpcode.nrefactory.5.5.1.nupkg.sha512",
+        "icsharpcode.nrefactory.nuspec",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.dll",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.xml",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.xml",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.xml",
+        "lib/Net40/ICSharpCode.NRefactory.dll",
+        "lib/Net40/ICSharpCode.NRefactory.xml"
+      ]
+    },
     "Microsoft.CodeAnalysis.FxCopAnalyzers/2.9.4": {
       "sha512": "Hq8ubc3mgNElouL7+nYqUfrgtH0s5F8UUdicBnjr72DSPKC/bQMU8lpySQ3Hog7JU7SyblFfpJR3VMgNFTzcww==",
       "type": "package",
@@ -2526,6 +2578,30 @@
         "runtimes/win/lib/net46/Microsoft.Win32.Registry.dll",
         "runtimes/win/lib/netcore50/_._",
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
+      ]
+    },
+    "Mono.Cecil/0.9.5.4": {
+      "sha512": "lSrFKGdaagNNm+GSDbHnYo3m31ceBk2PsszYdXFmphfTqB1fnX8lMEasSC6dYzHfiM+3PaMXEMFqgMJYFv1I8A==",
+      "type": "package",
+      "path": "mono.cecil/0.9.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Mono.Cecil.Mdb.dll",
+        "lib/net20/Mono.Cecil.Pdb.dll",
+        "lib/net20/Mono.Cecil.dll",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/sl40/Mono.Cecil.Rocks.dll",
+        "lib/sl40/Mono.Cecil.dll",
+        "mono.cecil.0.9.5.4.nupkg.sha512",
+        "mono.cecil.nuspec"
       ]
     },
     "NETStandard.Library/1.6.0": {
@@ -6560,6 +6636,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
       "Autofac >= 4.9.4",
+      "ICSharpCode.NRefactory >= 5.5.1",
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.4",
       "xunit.runner.visualstudio >= 2.4.1"
     ]
@@ -6605,6 +6682,10 @@
             "target": "Package",
             "version": "[4.9.4, )"
           },
+          "ICSharpCode.NRefactory": {
+            "target": "Package",
+            "version": "[5.5.1, )"
+          },
           "Microsoft.CodeAnalysis.FxCopAnalyzers": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
@@ -6636,5 +6717,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'ICSharpCode.NRefactory 5.5.1' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "ICSharpCode.NRefactory",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Mono.Cecil 0.9.5.4' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Mono.Cecil",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Autofac" Version="4.9.4" />
+    <PackageReference Include="ICSharpCode.NRefactory" Version="5.5.1" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.4">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,10 +17,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Infraestrutura\" />
   </ItemGroup>
 
 </Project>

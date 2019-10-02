@@ -17,6 +17,24 @@
           "build/netstandard1.0/coverlet.collector.targets": {}
         }
       },
+      "ICSharpCode.NRefactory/5.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Mono.Cecil": "0.9.5.4"
+        },
+        "compile": {
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {}
+        },
+        "runtime": {
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {},
+          "lib/Net40/ICSharpCode.NRefactory.dll": {}
+        }
+      },
       "Microsoft.CodeCoverage/16.3.0": {
         "type": "package",
         "compile": {
@@ -337,6 +355,21 @@
         },
         "compile": {
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
+        }
+      },
+      "Mono.Cecil/0.9.5.4": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {},
+          "lib/net40/Mono.Cecil.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {},
+          "lib/net40/Mono.Cecil.Pdb.dll": {},
+          "lib/net40/Mono.Cecil.Rocks.dll": {},
+          "lib/net40/Mono.Cecil.dll": {}
         }
       },
       "MSTest.TestAdapter/2.0.0": {
@@ -1721,7 +1754,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
         "dependencies": {
-          "Autofac": "4.9.4"
+          "Autofac": "4.9.4",
+          "ICSharpCode.NRefactory": "5.5.1"
         },
         "compile": {
           "bin/placeholder/Banco.dll": {}
@@ -1780,6 +1814,25 @@
         "build/netstandard1.0/coverlet.core.pdb",
         "coverlet.collector.1.1.0.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "ICSharpCode.NRefactory/5.5.1": {
+      "sha512": "iFnWweJykC6nHF535Qv1gYMseEWcM8/CvBMDxZWlg4ExafRg5uJm5R30GufpbzSYrxg3ry7RJ4Pnw6ghKmuqfg==",
+      "type": "package",
+      "path": "icsharpcode.nrefactory/5.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icsharpcode.nrefactory.5.5.1.nupkg.sha512",
+        "icsharpcode.nrefactory.nuspec",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.dll",
+        "lib/Net40/ICSharpCode.NRefactory.CSharp.xml",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Cecil.xml",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.dll",
+        "lib/Net40/ICSharpCode.NRefactory.Xml.xml",
+        "lib/Net40/ICSharpCode.NRefactory.dll",
+        "lib/Net40/ICSharpCode.NRefactory.xml"
       ]
     },
     "Microsoft.CodeCoverage/16.3.0": {
@@ -2184,6 +2237,30 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "Mono.Cecil/0.9.5.4": {
+      "sha512": "lSrFKGdaagNNm+GSDbHnYo3m31ceBk2PsszYdXFmphfTqB1fnX8lMEasSC6dYzHfiM+3PaMXEMFqgMJYFv1I8A==",
+      "type": "package",
+      "path": "mono.cecil/0.9.5.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Mono.Cecil.Mdb.dll",
+        "lib/net20/Mono.Cecil.Pdb.dll",
+        "lib/net20/Mono.Cecil.dll",
+        "lib/net35/Mono.Cecil.Mdb.dll",
+        "lib/net35/Mono.Cecil.Pdb.dll",
+        "lib/net35/Mono.Cecil.Rocks.dll",
+        "lib/net35/Mono.Cecil.dll",
+        "lib/net40/Mono.Cecil.Mdb.dll",
+        "lib/net40/Mono.Cecil.Pdb.dll",
+        "lib/net40/Mono.Cecil.Rocks.dll",
+        "lib/net40/Mono.Cecil.dll",
+        "lib/sl40/Mono.Cecil.Rocks.dll",
+        "lib/sl40/Mono.Cecil.dll",
+        "mono.cecil.0.9.5.4.nupkg.sha512",
+        "mono.cecil.nuspec"
       ]
     },
     "MSTest.TestAdapter/2.0.0": {
@@ -6026,5 +6103,27 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'ICSharpCode.NRefactory 5.5.1' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "ICSharpCode.NRefactory",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'Mono.Cecil 0.9.5.4' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto '.NETCoreApp,Version=v3.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "Mono.Cecil",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.0"
+      ]
+    }
+  ]
 }
