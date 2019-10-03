@@ -21,7 +21,7 @@ namespace BancoTeste
             // morre quando não mais utilizado
             this.retirada = fix.Container.Resolve<IRetirada>();
             this.ClienteTeste = new PessoaJuridica("Empresa Ago", "15.432.444/0009-90");// mocar mok 
-            this.conta = new Conta(0838, 12345678, this.ClienteTeste);// mocar mok 
+            this.conta = new Conta(0838, 12345678, EnumTipoConta.Poupanca, this.ClienteTeste);// mocar mok 
         }
         [Fact]
         public void Test2()

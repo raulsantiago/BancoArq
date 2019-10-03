@@ -1,27 +1,25 @@
 ﻿using Autofac;
 using Autofac.Core;
 using Banco.Aplicacao.CasoDeUso;
-using Banco.Infraestrutura;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BancoTeste.Injecao
 {
-    public class FixtureDeposito
+    public class FixtureTransferencia
     {
         public IContainer Container { get; private set; }
 
-        public FixtureDeposito() 
+        public FixtureTransferencia()
         {
-            
-            // Aqui ele busca a classe concreta exemplo Deposito
+            // Aqui ele busca a classe concreta exemplo Retirada
             var builder = new ContainerBuilder();
-            builder.RegisterType<Deposito>()
-                .As<IDeposito>() // a classe IDeposito é a classe Deposito
-                .InstancePerDependency();
+            builder.RegisterType<Transferencia>()
+              .As<ITransferencia>() // a classe IDeposito é a classe Retirada
+              .InstancePerDependency();
             Container = builder.Build();
-
         }
+
     }
 }

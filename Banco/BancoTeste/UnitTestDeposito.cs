@@ -17,18 +17,17 @@ namespace BancoTeste
         public Conta conta { get; set; }
 
 
-
         // Construtor Para injetar as dependencias.
         public UnitTestDeposito(Injecao.FixtureDeposito fix)
         {
             // morre quando não mais utilizado
             this.deposito = fix.Container.Resolve<IDeposito>();
             this.ClienteTeste = new PessoaFisica("Raul Santiago", "530.280.270-87");// mocar mok 
-            this.conta = new Conta(0838, 12345678, this.ClienteTeste);// mocar mok 
+            this.conta = new Conta(0838, 12345678,  EnumTipoConta.Corrente, this.ClienteTeste);// mocar mok 
 
         }
         [Fact]
-        public void Test1()
+        public void TestDeposito()
         {
             //new Conta = new Conta;
             var retorno = deposito.Executar(10.5m, this.conta);

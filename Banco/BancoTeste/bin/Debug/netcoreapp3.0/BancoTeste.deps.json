@@ -29,6 +29,29 @@
         }
       },
       "coverlet.collector/1.1.0": {},
+      "ICSharpCode.NRefactory/5.5.1": {
+        "dependencies": {
+          "Mono.Cecil": "0.9.5.4"
+        },
+        "runtime": {
+          "lib/Net40/ICSharpCode.NRefactory.CSharp.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.5.1.0"
+          },
+          "lib/Net40/ICSharpCode.NRefactory.Cecil.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.5.1.0"
+          },
+          "lib/Net40/ICSharpCode.NRefactory.Xml.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.5.1.0"
+          },
+          "lib/Net40/ICSharpCode.NRefactory.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.5.1.0"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/16.3.0": {
         "runtime": {
           "lib/netcoreapp1.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -316,6 +339,26 @@
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
+        }
+      },
+      "Mono.Cecil/0.9.5.4": {
+        "runtime": {
+          "lib/net40/Mono.Cecil.Mdb.dll": {
+            "assemblyVersion": "0.9.5.0",
+            "fileVersion": "0.9.5.0"
+          },
+          "lib/net40/Mono.Cecil.Pdb.dll": {
+            "assemblyVersion": "0.9.5.0",
+            "fileVersion": "0.9.5.0"
+          },
+          "lib/net40/Mono.Cecil.Rocks.dll": {
+            "assemblyVersion": "0.9.5.0",
+            "fileVersion": "0.9.5.0"
+          },
+          "lib/net40/Mono.Cecil.dll": {
+            "assemblyVersion": "0.9.5.0",
+            "fileVersion": "0.9.5.0"
+          }
         }
       },
       "MSTest.TestAdapter/2.0.0": {
@@ -1140,7 +1183,8 @@
       },
       "Banco/1.0.0": {
         "dependencies": {
-          "Autofac": "4.9.4"
+          "Autofac": "4.9.4",
+          "ICSharpCode.NRefactory": "5.5.1"
         },
         "runtime": {
           "Banco.dll": {}
@@ -1167,6 +1211,13 @@
       "sha512": "sha512-OBxWQ4vNm+kVvKy8NTk6skRNMQCeQLqSqJ0xq19S0GLovHYTnVTcsjYgV54t6LnjjQ6mDADMcFvHMQHLoNQhIg==",
       "path": "coverlet.collector/1.1.0",
       "hashPath": "coverlet.collector.1.1.0.nupkg.sha512"
+    },
+    "ICSharpCode.NRefactory/5.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iFnWweJykC6nHF535Qv1gYMseEWcM8/CvBMDxZWlg4ExafRg5uJm5R30GufpbzSYrxg3ry7RJ4Pnw6ghKmuqfg==",
+      "path": "icsharpcode.nrefactory/5.5.1",
+      "hashPath": "icsharpcode.nrefactory.5.5.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/16.3.0": {
       "type": "package",
@@ -1223,6 +1274,13 @@
       "sha512": "sha512-9ZQKCWxH7Ijp9BfahvL2Zyf1cJIk8XYLF6Yjzr2yi0b2cOut/HQ31qf1ThHAgCc3WiZMdnWcfJCgN82/0UunxA==",
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
+    },
+    "Mono.Cecil/0.9.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lSrFKGdaagNNm+GSDbHnYo3m31ceBk2PsszYdXFmphfTqB1fnX8lMEasSC6dYzHfiM+3PaMXEMFqgMJYFv1I8A==",
+      "path": "mono.cecil/0.9.5.4",
+      "hashPath": "mono.cecil.0.9.5.4.nupkg.sha512"
     },
     "MSTest.TestAdapter/2.0.0": {
       "type": "package",
